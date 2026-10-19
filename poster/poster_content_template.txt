@@ -1,0 +1,41 @@
+# Poster content template
+
+**Title:** Abnormal Patterns in Continuous Patient Monitoring  
+**Student:** Sangeetha
+
+## Background / Objective
+Explore the distributions, missingness, unusual values, relationships, and time-dependent patterns of five ICU vital signs: HR, SpO₂, MAP, temperature, and respiratory rate.
+
+## Dataset
+eICU Collaborative Research Database Demo v2.0.1, via PhysioNet. Report the actual number of stays and observations printed by the notebook. Do not include raw patient-level data in the poster.
+
+## Methods
+- Data quality: missingness, duplicate case/timestamp records, plausible-range checks.
+- Missing data: short-gap carry-forward rules are documented in the notebook.
+- Outliers: IQR flags are compared with illustrative abnormal ranges; IQR outliers are not automatically deleted.
+- Analysis: descriptive statistics, distribution plots, bivariate plots, correlation heatmaps, patient-level outcome comparison, and time-series summaries.
+- Extension: transparent threshold-based abnormal-pattern flags.
+
+## Results (replace with actual values)
+- Number of ICU stays: [copy from notebook output]
+- Number of 5-minute observations: [copy from notebook output]
+- Highest missingness: [vital and percentage]
+- Most frequent IQR outlier vital: [vital and count]
+- Strongest correlation: [vital pair and coefficient]
+- Key temporal pattern: [describe a pattern supported by your plot]
+- Threshold-flag result: [vital and flagged percentage]
+
+## Conclusion
+State 2–3 conclusions directly supported by your outputs. Explain that data quality and time-aware interpretation matter when analyzing continuous monitoring data.
+
+## Limitations
+Demo sample; incomplete observations; simplified thresholds; observational analysis; no clinical validation; no trained ML model or real-time alarm system.
+
+## Suggested figures and captions
+1. Missingness heatmap — “Missing observations across sampled time-ordered records.”
+2. Five-vital histogram panel — “Distribution of each vital sign with illustrative threshold markers.”
+3. Correlation heatmap — “Pairwise correlations across monitored vital signs.”
+4. Example patient time series — “Vital-sign changes over time for one sampled ICU stay.”
+5. Abnormal-flag summary — “Share of observations outside the project's illustrative thresholds.”
+
+**Important:** Do not leave bracketed placeholders in the final poster. Run the notebook and replace every placeholder with the actual output.
